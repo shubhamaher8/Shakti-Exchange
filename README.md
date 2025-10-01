@@ -1,4 +1,4 @@
-# ShaktiExchange: Peer-to-Peer Energy Trading Platform ⚡
+# ShaktiExchange: Peer-to-Peer Energy Trading Platform 
 
 &nbsp;
 
