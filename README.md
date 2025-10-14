@@ -45,14 +45,69 @@ ShaktiExchange is a revolutionary platform enabling peer-to-peer energy trading,
 
 ```
 ShaktiExchange/
-├── index.html          # Landing page
-├── dashboard.html      # User dashboard
-├── app.js              # Main application logic
-├── app_landing.js      # Landing page functionality
-├── config.js           # Configuration settings
-├── style.css           # Main stylesheet
-├── style_landing.css   # Landing page styles
-└── assets/             # Images, icons, and other static resources
+├── index.html                  # Landing page
+├── dashboard.html              # User dashboard
+├── app.js                      # Main application logic
+├── app_landing.js              # Landing page functionality
+├── config.js                   # Configuration settings
+├── style.css                   # Main stylesheet
+├── style_landing.css           # Landing page styles
+├── EnergyTradingSimple.sol     # Smart contract (Solidity)
+├── PROJECT_EXPLANATION.md      # Complete technical documentation
+├── QUICK_START_GUIDE.md        # Beginner-friendly guide
+└── assets/                     # Images, icons, and other static resources
+```
+
+## 📚 Documentation
+
+### For Beginners:
+- **[Quick Start Guide](QUICK_START_GUIDE.md)** - Step-by-step instructions for your first trade
+- Visual walkthrough of all features
+- Common questions answered
+- 5-minute first transaction guide
+
+### For Developers:
+- **[Project Explanation](PROJECT_EXPLANATION.md)** - Complete technical documentation
+- Architecture diagrams and flow charts
+- Smart contract detailed analysis
+- Security features and best practices
+- Setup and deployment instructions
+- Troubleshooting guide
+
+## 🔧 Technical Overview
+
+### Smart Contract
+- **Language**: Solidity ^0.8.19
+- **Network**: Ethereum Sepolia Testnet
+- **Contract Address**: `0x501B9b7d87dA4a291E78095EF6493950f6c55250`
+- **Features**:
+  - Decentralized energy listing and trading
+  - Automated escrow and settlement
+  - Transaction history tracking
+  - Emergency pause mechanism
+  - Owner administrative controls
+
+### Frontend Integration
+- **Web3 Library**: Web3.js v1.8.0 & Ethers.js
+- **Wallet**: MetaMask integration
+- **API**: JSON-RPC communication with Ethereum
+- **UI**: Responsive design with modern CSS
+
+### Key Functions
+```javascript
+// User Registration
+registerAsProducer()
+registerAsConsumer()
+
+// Trading Operations
+sellEnergy(amount, pricePerKWh)
+buyEnergy(listingId)
+withdrawFunds()
+
+// Data Retrieval
+getListings()
+getUserListings(address)
+getTransactionHistory(address)
 ```
 
 ## 🌱 Sustainability Impact
